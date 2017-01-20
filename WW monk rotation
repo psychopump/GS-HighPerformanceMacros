@@ -1,0 +1,34 @@
+Sequences['WW_Kiddo'] = {
+  Author="Kiddo@Twisting Nether",  
+  SpecID=269,
+  Talents = "3233122",
+  Default=1,
+  MacroVersions = {
+    [1] = {
+      StepFunction = [[Sequential]],
+      KeyPress={
+        "/targetenemy [noharm][dead]",
+      },
+      PreMacro={
+      },
+        "/cast [combat,nochanneling] Tiger Palm",
+        "/castsequence [nochanneling] Strike of the Windlord, Strike of the Windlord",
+        "/cast [combat,nochanneling] Leg Sweep",
+        "/cast [combat,nochanneling] Touch of Death",
+        "/cast [combat,nochanneling] Touch of Karma",
+        "/cast [combat,nochanneling] Blackout Kick",
+        "/cast [combat,nochanneling] Tiger Palm",
+        "/cast [combat,nochanneling] Spinning Crane Kick",
+        "/cast [combat,nochanneling] Invoke Xuen, the White Tiger",
+        "/cast [combat,nochanneling] Storm, Earth, and Fire",
+        "/cast [nochanneling] Tiger's Lust",
+        "/cast [combat,nochanneling] Tiger Palm",
+      PostMacro={
+      },
+      KeyRelease={
+        "/startattack",
+        "/castsequence [nochanneling] Fists of Fury, Rising Sun Kick, Whirling Dragon Punch, Rising Sun Kick",
+      },
+    },
+  },
+}
